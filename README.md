@@ -22,6 +22,8 @@ In your browser go to route ```http://localhost:3000/dashboard``` to visualize t
 
 In a second tab, go to route ```http://127.0.0.1:5173```, this is a blank view but it's the execution of websockets in the client (it's a vite project).
 
+The **CRUD starts** on the route: ```http://localhost:3000/stores/```
+
 Several considerations over the development of this app:
 
 1. We're using here the "push" heartbeating method to check all services (and devices), borrowed from microservice architecture approach on which every microservice is sending its own status to registry.
