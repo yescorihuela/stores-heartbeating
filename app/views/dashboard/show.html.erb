@@ -4,12 +4,12 @@
     <% @stores.each do |store| %>
         <div class="col p-2">
           <ul class="list-group">
-            <li class="list-group-item list-group-item-light" id="store_<%= store.id %>">Store name: No data</li>
-            <li class="list-group-item list-group-item-light" id="address_<%= store.id %>">Store address: No data</li>
+            <li class="list-group-item list-group-item-info" id="store_<%= store.id %>">Store name: No data</li>
+            <li class="list-group-item list-group-item-light" id="store_status_<%= store.id %>">Store status: No data</li>
             <li class="list-group-item list-group-item-light" id="printer_<%= store.id %>">Printer: No data</li>
             <li class="list-group-item list-group-item-light" id="webserver_<%= store.id %>">Web Server: No data</li>
             <li class="list-group-item list-group-item-light" id="dbserver_<%= store.id %>">DB Server: No data</li>
-            <li class="list-group-item list-group-item-light" id="updated_at_<%= store.id %>">Last update: No data</li>
+            <li class="list-group-item list-group-item-info" id="updated_at_<%= store.id %>">Last update: No data</li>
           </ul>
         </div>
     <% end %>
