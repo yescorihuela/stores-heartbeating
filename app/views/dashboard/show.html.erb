@@ -1,0 +1,17 @@
+<h1>Dashboard for stores' status</h1>
+<div class="container px-4 text-start">
+  <div class="row gx-4 row-cols-4">
+    <% @stores.each do |store| %>
+        <div class="col p-2">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-light" id="store_<%= store.id %>">Store name: No data</li>
+            <li class="list-group-item list-group-item-light" id="address_<%= store.id %>">Store address: No data</li>
+            <li class="list-group-item list-group-item-light" id="printer_<%= store.id %>">Printer: No data</li>
+            <li class="list-group-item list-group-item-light" id="webserver_<%= store.id %>">Web Server: No data</li>
+            <li class="list-group-item list-group-item-light" id="dbserver_<%= store.id %>">DB Server: No data</li>
+            <li class="list-group-item list-group-item-light" id="updated_at_<%= store.id %>">Last update: No data</li>
+          </ul>
+        </div>
+    <% end %>
+  </div>
+</div>
