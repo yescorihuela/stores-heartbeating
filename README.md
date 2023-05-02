@@ -1,7 +1,7 @@
 # README
 
 After clone this repo in your local machine, please execute the next instructions as shown below:
-
+**NOTE**: execute these instructions before run the project.
 ```
 1. git submodule update
 2. cd client-stores/
@@ -30,4 +30,4 @@ Several considerations over the development of this app:
    - Using **ActionCable** approach, available in Rails since the version 5, we can simulate the printer, the webserver and the database server as one-to-one conversation with the server (which is working like microservices registry).
    - The second approach is **RESTful** which has been examinated generating heartbeats through cronjobs which sends requests to HTTP endpoints with each device status as payload, it's a straighforward approach. Every param will be into the URL: /restaurants/1/device_type/printer/1.
 
-3. If you want increase or decrease the time of sending requests through websockets, please go
+3. If you want increase or decrease the time of sending requests through websockets, please go to this [line](https://github.com/yescorihuela/client-stores/blob/20dce73a8e3aeffd1edf2caab7908ad1f75e1cd7/main.js#L64)
