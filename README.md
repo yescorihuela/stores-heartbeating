@@ -31,3 +31,10 @@ Several considerations over the development of this app:
    - The second approach is **RESTful** which has been examinated generating heartbeats through cronjobs which sends requests to HTTP endpoints with each device status as payload, it's a straighforward approach. Every param will be into the URL: /restaurants/1/device_type/printer/1.
 
 3. If you want increase or decrease the time of sending requests through websockets, please go to this [line](https://github.com/yescorihuela/client-stores/blob/20dce73a8e3aeffd1edf2caab7908ad1f75e1cd7/main.js#L64)
+
+4. In you want to run/rollback the reversible migration, you can do it by:
+  ```bash
+    rake db:migrate # it will execute the migration or all the pending
+    rake db:rollback STEP=1 # VERY IMPORTANT STEP=n means that you would run just 1 step or 2 if you want to check step by step the executed migrations
+  ```
+Remember you've run the last ```rake db:migrate``` at first time, it has run all the migrations, in this case you could rollback it to see the change has occurred.
