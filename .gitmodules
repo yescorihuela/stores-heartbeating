@@ -1,0 +1,3 @@
+[submodule "client-stores"]
+	path = client-stores
+	url = https://github.com/yescorihuela/client-stores
